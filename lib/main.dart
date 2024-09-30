@@ -1,4 +1,5 @@
 import 'package:aplicacion1_ejemplo/pages/detail.dart';
+import 'package:aplicacion1_ejemplo/pages/home.dart';
 import 'package:aplicacion1_ejemplo/pages/myhomepage.dart';
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     logger.d("Logger is working!");
 
     return MaterialApp(
-      title: 'Clicks App',
+      title: 'Mokkapp',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
             seedColor: const Color.fromARGB(255, 1, 255, 26)),
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: 'Caramel',
       ),
-      home: const MyHomePage(title: 'Clicks Home Page'),
+      home: const HomePage(title: 'MokkApp'),
       //home: const Detail(),
     );
   }
