@@ -6,6 +6,7 @@ class Usuario {
   String email;
   List<String> preferencias;
   List<Receta> recetasFavoritas;
+  List<Receta> recetasCreadas;
 
   Usuario({
     required this.id,
@@ -13,13 +14,16 @@ class Usuario {
     required this.email,
     required this.preferencias,
     required this.recetasFavoritas,
+    required this.recetasCreadas,
   });
 
   void gestionarFavoritos(Receta receta) {
     if (recetasFavoritas.contains(receta)) {
       recetasFavoritas.remove(receta);
+      receta.esFavorito = false; // Actualizar el estado de favorito
     } else {
       recetasFavoritas.add(receta);
+      receta.esFavorito = true; // Marcar como favorito
     }
   }
 
@@ -41,6 +45,7 @@ class Usuario {
       autor: this.nombre,
       resenas: [],
       esFavorito: false,
+      productosRelacionados: [],
     );
   }
 }

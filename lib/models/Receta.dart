@@ -1,4 +1,4 @@
-import 'package:aplicacion1_ejemplo/models/Resena.dart';
+import '../models/ProductoRelacionado.dart';
 
 class Receta {
   String id;
@@ -12,6 +12,7 @@ class Receta {
   String autor;
   List<Receta> resenas;
   bool esFavorito;
+  List<ProductoRelacionado> productosRelacionados;
 
   Receta({
     required this.id,
@@ -25,5 +26,6 @@ class Receta {
     required this.autor,
     required this.resenas,
     required this.esFavorito,
+    required this.productosRelacionados,
   });
 }

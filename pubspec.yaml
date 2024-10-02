@@ -46,4 +46,10 @@ flutter:
       fonts:
         - asset: fonts/Super-Caramel.ttf
           style: normal
+    - family: OpenSans
+      fonts:
+        - asset: fonts/OpenSans-Regular.ttf
+        - asset: fonts/OpenSans-Bold.ttf
+          weight: 700
+          style: normal
 
